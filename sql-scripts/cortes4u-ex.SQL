@@ -156,3 +156,11 @@ from vteamRoster v
 join batting b on b.playerID = v.playerID
 group by v.DivisionName;
 */
+/*
+
+use RockStarDay2;
+
+select CONCAT(FirstName,' ', LastName)
+as FullName
+, Year(BirthDate) as BirthYear
+From BandMembers;
